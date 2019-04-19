@@ -9,23 +9,30 @@
 /* Begin PBXBuildFile section */
 		5897B9659C9FCC75FE5F25AF /* Pods_ios_mvc_architect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1735EB10A09808598C4B21E6 /* Pods_ios_mvc_architect.framework */; };
 		FF9144DC2268720E00C0B763 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144DB2268720E00C0B763 /* AppDelegate.swift */; };
-		FF9144DE2268720E00C0B763 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144DD2268720E00C0B763 /* ViewController.swift */; };
+		FF9144DE2268720E00C0B763 /* ReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144DD2268720E00C0B763 /* ReposViewController.swift */; };
 		FF9144E12268720E00C0B763 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9144DF2268720E00C0B763 /* Main.storyboard */; };
 		FF9144E32268720F00C0B763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF9144E22268720F00C0B763 /* Assets.xcassets */; };
 		FF9144E62268720F00C0B763 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9144E42268720F00C0B763 /* LaunchScreen.storyboard */; };
 		FF9144F5226966D900C0B763 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144F4226966D900C0B763 /* Storyboards.swift */; };
 		FF9144F8226989F400C0B763 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144F7226989F400C0B763 /* UIView+.swift */; };
 		FF9144FE2269A1C800C0B763 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144FD2269A1C800C0B763 /* APIService.swift */; };
-		FF9145032269A27F00C0B763 /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9145022269A27F00C0B763 /* SearchRequest.swift */; };
+		FF9145032269A27F00C0B763 /* ReposRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9145022269A27F00C0B763 /* ReposRequest.swift */; };
 		FF9145052269A2A900C0B763 /* APIUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9145042269A2A900C0B763 /* APIUrls.swift */; };
 		FF9145072269A2E000C0B763 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9145062269A2E000C0B763 /* BaseRequest.swift */; };
-		FF91450A2269A32F00C0B763 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9145092269A32F00C0B763 /* SearchResponse.swift */; };
+		FF91450A2269A32F00C0B763 /* ReposResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9145092269A32F00C0B763 /* ReposResponse.swift */; };
 		FF91450D2269A36300C0B763 /* BaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF91450C2269A36300C0B763 /* BaseResult.swift */; };
 		FF91450F2269A38000C0B763 /* CustomRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF91450E2269A38000C0B763 /* CustomRequestAdapter.swift */; };
 		FF9145122269A39C00C0B763 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9145112269A39C00C0B763 /* ErrorResponse.swift */; };
 		FF9145142269A3AD00C0B763 /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9145132269A3AD00C0B763 /* BaseError.swift */; };
-		FF9145162269A4E200C0B763 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9145152269A4E200C0B763 /* User.swift */; };
+		FF9145162269A4E200C0B763 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9145152269A4E200C0B763 /* Repo.swift */; };
 		FF9145192269A58200C0B763 /* RepoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9145182269A58200C0B763 /* RepoRepository.swift */; };
+		FF91451F2269AFD400C0B763 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF91451E2269AFD400C0B763 /* Screen.swift */; };
+		FF9145222269B1B500C0B763 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9145212269B1B500C0B763 /* MainViewController.swift */; };
+		FF9145242269B22300C0B763 /* Repo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9145232269B22300C0B763 /* Repo.storyboard */; };
+		FF9145262269B39700C0B763 /* UIViewController+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9145252269B39700C0B763 /* UIViewController+Debug.swift */; };
+		FF91452A2269B4A400C0B763 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9145282269B4A400C0B763 /* RepoCell.swift */; };
+		FF91452B2269B4A400C0B763 /* RepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF9145292269B4A400C0B763 /* RepoCell.xib */; };
+		FF91452D2269BEB900C0B763 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF91452C2269BEB900C0B763 /* UIViewController+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +41,7 @@
 		DA7B488706D85CE83AFA2EC4 /* Pods-ios-mvc_architect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-mvc_architect.debug.xcconfig"; path = "Target Support Files/Pods-ios-mvc_architect/Pods-ios-mvc_architect.debug.xcconfig"; sourceTree = "<group>"; };
 		FF9144D82268720E00C0B763 /* ios-mvc_architect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-mvc_architect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9144DB2268720E00C0B763 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF9144DD2268720E00C0B763 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF9144DD2268720E00C0B763 /* ReposViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewController.swift; sourceTree = "<group>"; };
 		FF9144E02268720E00C0B763 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF9144E22268720F00C0B763 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF9144E52268720F00C0B763 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,16 +50,23 @@
 		FF9144F62269671B00C0B763 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		FF9144F7226989F400C0B763 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		FF9144FD2269A1C800C0B763 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		FF9145022269A27F00C0B763 /* SearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
+		FF9145022269A27F00C0B763 /* ReposRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposRequest.swift; sourceTree = "<group>"; };
 		FF9145042269A2A900C0B763 /* APIUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUrls.swift; sourceTree = "<group>"; };
 		FF9145062269A2E000C0B763 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
-		FF9145092269A32F00C0B763 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		FF9145092269A32F00C0B763 /* ReposResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposResponse.swift; sourceTree = "<group>"; };
 		FF91450C2269A36300C0B763 /* BaseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResult.swift; sourceTree = "<group>"; };
 		FF91450E2269A38000C0B763 /* CustomRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRequestAdapter.swift; sourceTree = "<group>"; };
 		FF9145112269A39C00C0B763 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		FF9145132269A3AD00C0B763 /* BaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
-		FF9145152269A4E200C0B763 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FF9145152269A4E200C0B763 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		FF9145182269A58200C0B763 /* RepoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoRepository.swift; sourceTree = "<group>"; };
+		FF91451E2269AFD400C0B763 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		FF9145212269B1B500C0B763 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FF9145232269B22300C0B763 /* Repo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Repo.storyboard; sourceTree = "<group>"; };
+		FF9145252269B39700C0B763 /* UIViewController+Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Debug.swift"; sourceTree = "<group>"; };
+		FF9145282269B4A400C0B763 /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		FF9145292269B4A400C0B763 /* RepoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoCell.xib; sourceTree = "<group>"; };
+		FF91452C2269BEB900C0B763 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +124,7 @@
 				FF9144EF2268831500C0B763 /* Extensions */,
 				FF9144EE2268830F00C0B763 /* Data */,
 				FF9144F1226883D700C0B763 /* Scenes */,
+				FF91451A2269AF6700C0B763 /* Support */,
 				FF9144F62269671B00C0B763 /* Bridging-Header.h */,
 				FF9144E22268720F00C0B763 /* Assets.xcassets */,
 				FF9144E42268720F00C0B763 /* LaunchScreen.storyboard */,
@@ -139,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				FF9144F7226989F400C0B763 /* UIView+.swift */,
+				FF9145252269B39700C0B763 /* UIViewController+Debug.swift */,
+				FF91452C2269BEB900C0B763 /* UIViewController+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -155,7 +172,9 @@
 			isa = PBXGroup;
 			children = (
 				FF9144F2226883EA00C0B763 /* Storyboards */,
-				FF9145172269A52100C0B763 /* Main */,
+				FF91451D2269AF8100C0B763 /* Common */,
+				FF9145202269B19700C0B763 /* Main */,
+				FF9145172269A52100C0B763 /* Repo */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -165,6 +184,7 @@
 			children = (
 				FF9144F4226966D900C0B763 /* Storyboards.swift */,
 				FF9144DF2268720E00C0B763 /* Main.storyboard */,
+				FF9145232269B22300C0B763 /* Repo.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -172,7 +192,7 @@
 		FF9144F92269A19D00C0B763 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FF9145152269A4E200C0B763 /* User.swift */,
+				FF9145152269A4E200C0B763 /* Repo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,7 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				FF9145062269A2E000C0B763 /* BaseRequest.swift */,
-				FF9145022269A27F00C0B763 /* SearchRequest.swift */,
+				FF9145022269A27F00C0B763 /* ReposRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -218,7 +238,7 @@
 		FF9145082269A31B00C0B763 /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				FF9145092269A32F00C0B763 /* SearchResponse.swift */,
+				FF9145092269A32F00C0B763 /* ReposResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -241,12 +261,46 @@
 			path = Error;
 			sourceTree = "<group>";
 		};
-		FF9145172269A52100C0B763 /* Main */ = {
+		FF9145172269A52100C0B763 /* Repo */ = {
 			isa = PBXGroup;
 			children = (
-				FF9144DD2268720E00C0B763 /* ViewController.swift */,
+				FF9145272269B49400C0B763 /* Cell */,
+				FF9144DD2268720E00C0B763 /* ReposViewController.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		FF91451A2269AF6700C0B763 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				FF91451E2269AFD400C0B763 /* Screen.swift */,
+			);
+			name = Support;
+			path = "Suppỏt";
+			sourceTree = "<group>";
+		};
+		FF91451D2269AF8100C0B763 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FF9145202269B19700C0B763 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FF9145212269B1B500C0B763 /* MainViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		FF9145272269B49400C0B763 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FF9145282269B4A400C0B763 /* RepoCell.swift */,
+				FF9145292269B4A400C0B763 /* RepoCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,9 +364,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF9145242269B22300C0B763 /* Repo.storyboard in Resources */,
 				FF9144E62268720F00C0B763 /* LaunchScreen.storyboard in Resources */,
 				FF9144E32268720F00C0B763 /* Assets.xcassets in Resources */,
 				FF9144E12268720E00C0B763 /* Main.storyboard in Resources */,
+				FF91452B2269B4A400C0B763 /* RepoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +408,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-ios-mvc_architect/Pods-ios-mvc_architect-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
@@ -363,6 +420,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
@@ -399,19 +457,24 @@
 			files = (
 				FF9145072269A2E000C0B763 /* BaseRequest.swift in Sources */,
 				FF9145192269A58200C0B763 /* RepoRepository.swift in Sources */,
+				FF91452D2269BEB900C0B763 /* UIViewController+.swift in Sources */,
+				FF9145262269B39700C0B763 /* UIViewController+Debug.swift in Sources */,
 				FF91450D2269A36300C0B763 /* BaseResult.swift in Sources */,
 				FF9144F8226989F400C0B763 /* UIView+.swift in Sources */,
 				FF9145122269A39C00C0B763 /* ErrorResponse.swift in Sources */,
-				FF9145032269A27F00C0B763 /* SearchRequest.swift in Sources */,
+				FF9145032269A27F00C0B763 /* ReposRequest.swift in Sources */,
 				FF9144FE2269A1C800C0B763 /* APIService.swift in Sources */,
+				FF91452A2269B4A400C0B763 /* RepoCell.swift in Sources */,
+				FF9145222269B1B500C0B763 /* MainViewController.swift in Sources */,
+				FF91451F2269AFD400C0B763 /* Screen.swift in Sources */,
 				FF9144F5226966D900C0B763 /* Storyboards.swift in Sources */,
-				FF9145162269A4E200C0B763 /* User.swift in Sources */,
+				FF9145162269A4E200C0B763 /* Repo.swift in Sources */,
 				FF9145052269A2A900C0B763 /* APIUrls.swift in Sources */,
 				FF9145142269A3AD00C0B763 /* BaseError.swift in Sources */,
 				FF91450F2269A38000C0B763 /* CustomRequestAdapter.swift in Sources */,
-				FF9144DE2268720E00C0B763 /* ViewController.swift in Sources */,
+				FF9144DE2268720E00C0B763 /* ReposViewController.swift in Sources */,
 				FF9144DC2268720E00C0B763 /* AppDelegate.swift in Sources */,
-				FF91450A2269A32F00C0B763 /* SearchResponse.swift in Sources */,
+				FF91450A2269A32F00C0B763 /* ReposResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

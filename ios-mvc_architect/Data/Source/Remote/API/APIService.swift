@@ -36,7 +36,7 @@ struct APIService {
                     if let statusCode = response.response?.statusCode {
                         if statusCode == 200 {
                             print("👍 [\(statusCode)] " + input.url)
-                            print(response)
+//                            print(response)
                             let object = Mapper<T>().map(JSONObject: value)
                             completion(object, nil)
                         } else {

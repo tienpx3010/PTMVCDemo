@@ -9,7 +9,7 @@
 import ObjectMapper
 import Alamofire
 
-final class SearchRequest: BaseRequest {
+final class ReposRequest: BaseRequest {
     
     required init(page: Int, perPage: Int = 10) {
         let parameters: [String: Any]  = [

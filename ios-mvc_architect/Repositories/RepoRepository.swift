@@ -9,7 +9,7 @@
 import ObjectMapper
 
 protocol RepoRepository {
-    func fetchRepo(page: Int, completion: @escaping (BaseResult<SearchResponse>) -> Void)
+    func fetchRepo(page: Int, completion: @escaping (BaseResult<ReposResponse>) -> Void)
 }
 
 final class RepoRepositoryImpl: RepoRepository {
@@ -20,10 +20,10 @@ final class RepoRepositoryImpl: RepoRepository {
         self.api = api
     }
     
-    func fetchRepo(page: Int, completion: @escaping (BaseResult<SearchResponse>) -> Void) {
-        let input = SearchRequest(page: page)
+    func fetchRepo(page: Int, completion: @escaping (BaseResult<ReposResponse>) -> Void) {
+        let input = ReposRequest(page: page)
         
-        api?.request(input: input) { (object: SearchResponse?, error) in
+        api?.request(input: input) { (object: ReposResponse?, error) in
             if let object = object {
                 completion(.success(object))
             } else if let error = error {

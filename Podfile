@@ -1,6 +1,10 @@
 platform :ios, '9.0'
 
 def pods
+    # Core
+    pod 'Reusable', '4.0.5'
+    pod 'Then', '2.4'
+  
     # Networking
     pod 'Alamofire', '~> 4.8.1'
   
@@ -13,9 +17,8 @@ def pods
     # Database
     pod 'Realm', '~> 3.13.1'
     
-    # Core
-    pod 'Reusable', '4.0.5'
-    pod 'Then', '2.4'
+    #  Image
+    pod 'Kingfisher', '4.10.1'
 end
 
 target 'ios-mvc_architect' do
