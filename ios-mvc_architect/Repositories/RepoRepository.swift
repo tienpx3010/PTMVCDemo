@@ -8,12 +8,11 @@
 
 import ObjectMapper
 
-protocol RepoRepository {
+protocol RepoRepositoryType {
     func fetchRepo(page: Int, completion: @escaping (BaseResult<ReposResponse>) -> Void)
 }
 
-final class RepoRepositoryImpl: RepoRepository {
-    
+final class RepoRepository: RepoRepositoryType {
     private var api: APIService?
     
     required init(api: APIService) {

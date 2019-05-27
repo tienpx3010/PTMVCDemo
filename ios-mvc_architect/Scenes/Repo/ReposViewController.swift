@@ -10,11 +10,15 @@ final class ReposViewController: UIViewController { // swiftlint:disable:this fi
     
     // MARK: - IBOutlets
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
     
     // MARK: - Properties
     
-    private let repoRepository = RepoRepositoryImpl(api: APIService.share)
+    enum LayoutOptions {
+        static let rowHeight: CGFloat = 65
+    }
+    
+    private let repoRepo = RepoRepository(api: APIService.shared)
     
     private var repos: [Repo] = []
     
@@ -36,13 +40,13 @@ final class ReposViewController: UIViewController { // swiftlint:disable:this fi
         tableView.do {
             $0.delegate = self
             $0.dataSource = self
-            $0.rowHeight = 65
+            $0.rowHeight = LayoutOptions.rowHeight
             $0.register(cellType: RepoCell.self)
         }
     }
     
     private func fetchData() {
-        repoRepository.fetchRepo(page: 1) { result in
+        repoRepo.fetchRepo(page: 1) { result in
             switch result {
             case .success(let response):
                 guard let data = response?.repos else { return }
@@ -63,7 +67,7 @@ extension ReposViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: RepoCell = tableView.dequeueReusableCell(for: indexPath)
-        cell.setContent(repo: repos[indexPath.row])
+        cell.bind(repo: repos[indexPath.row])
         return cell
     }
 }

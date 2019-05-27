@@ -10,30 +10,15 @@ import ObjectMapper
 
 struct Repo {
     var id = 0
-    var name: String
-    var fullname: String
-    var urlString: String
-    var starCount: Int
-    var folkCount: Int
-    var avatarURLString: String
-}
-
-extension Repo {
-    init() {
-        self.init(
-            id: 0,
-            name: "",
-            fullname: "",
-            urlString: "",
-            starCount: 0,
-            folkCount: 0,
-            avatarURLString: ""
-        )
-    }
+    var name = ""
+    var fullname = ""
+    var urlString = ""
+    var starCount = 0
+    var folkCount = 0
+    var avatarURLString = ""
 }
 
 extension Repo: Mappable {
-    
     init?(map: Map) {
         self.init()
     }

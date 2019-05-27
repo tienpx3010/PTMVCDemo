@@ -22,7 +22,7 @@ final class RepoCell: UITableViewCell, NibReusable {
 
     // MARK: - Methods
     
-    func setContent(repo: Repo) {
+    func bind(repo: Repo) {
         nameLabel.text = repo.name
         avatarImage.kf.setImage(with: URL(string: repo.avatarURLString))
     }

@@ -6,8 +6,6 @@
 //  Copyright © 2019 Sun*. All rights reserved.
 //
 
-import UIKit
-
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,7 +15,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         let nav = UINavigationController()
         let vc = MainViewController.instantiate()
-        nav.viewControllers.append(vc)
+        nav.viewControllers = [vc]
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
         

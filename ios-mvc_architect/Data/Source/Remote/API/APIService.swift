@@ -11,7 +11,7 @@ import ObjectMapper
 
 struct APIService {
     
-    static let share = APIService()
+    static let shared = APIService()
     
     private var alamofireManager = Alamofire.SessionManager.default
     
@@ -29,14 +29,13 @@ struct APIService {
                                  method: input.requestType,
                                  parameters: input.parameters,
                                  encoding: input.encoding)
-            .validate(statusCode: 200..<500)
+            .validate(statusCode: 200..<511)
             .responseJSON { response in
                 switch response.result {
                 case .success(let value):
                     if let statusCode = response.response?.statusCode {
                         if statusCode == 200 {
                             print("👍 [\(statusCode)] " + input.url)
-//                            print(response)
                             let object = Mapper<T>().map(JSONObject: value)
                             completion(object, nil)
                         } else {
@@ -49,11 +48,17 @@ struct APIService {
                             }
                         }
                     } else {
+                        self.handleResponseError(BaseError.unexpectedError)
                         completion(nil, BaseError.unexpectedError)
                     }
                 case .failure(let error):
                     completion(nil, error as? BaseError)
+                    self.handleResponseError(error as? BaseError)
                 }
             }
+    }
+    
+    func handleResponseError(_ error: BaseError?) {
+        print(error ?? "")
     }
 }
